@@ -3,15 +3,15 @@ export const navItems = [
     name: 'Dashboard',
     url: '/dashboard',
     icon: 'fas fa-tachometer-alt',
-    badge: {
-      variant: 'info',
-      text: 'NEW'
-    }
+    // badge: {
+    //   variant: 'info',
+    //   text: 'NEW'
+    // }
   },
   {
     name: 'Posts',
     url: '/posts',
-    icon: 'fas fa-book',
+    icon: 'fas fa-newspaper',
     children: [
       {
         name: 'New Post',
@@ -22,6 +22,45 @@ export const navItems = [
         name: 'Posts',
         url: '/posts/list',
         icon: 'fas fa-list'
+      },
+    ]
+  },
+  {
+    name: 'Pages',
+    url: '/pages',
+    icon: 'fas fa-copy',
+    children: [
+      {
+        name: 'New Page',
+        url: '/pages/new',
+        icon: 'fas fa-plus'
+      },
+      {
+        name: 'Pages',
+        url: '/articles/list',
+        icon: 'fas fa-list'
+      }
+    ]
+  },
+  {
+    name: 'Editor',
+    url: '/editor',
+    icon: 'fas fa-calendar-alt',
+    children: [
+      {
+        name: 'Ideas',
+        url: '/editor/ideas',
+        icon: 'fas fa-lightbulb'
+      },
+      {
+        name: 'Calendar',
+        url: '/editor/calendar',
+        icon: 'fas fa-calendar-alt'
+      },
+      {
+        name: 'Planner',
+        url: '/posts/planner',
+        icon: 'fas fa-clipboard-list'
       }
     ]
   },
@@ -57,9 +96,26 @@ export const navItems = [
         url: '/hosting/typography',
         icon: 'fas fa-pencil-alt'
       },
+    ]
+  },
+  {
+    name: 'SEO',
+    url: '/seo',
+    icon: 'fas fa-tag',
+    children: [
       {
-        name: 'SEO',
-        url: '/hosting/seo',
+        name: 'General',
+        url: '/seo/general',
+        icon: 'fas fa-cog'
+      },
+      {
+        name: 'Tracking',
+        url: '/seo/tracking',
+        icon: 'fas fa-hashtag'
+      },
+      {
+        name: 'Analytics',
+        url: '/seo/analytics',
         icon: 'fas fa-chart-line'
       },
     ]
