@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
+import { MatToolbarModule } from '@angular/material';
+
 import { AppComponent } from './app.component';
 
 import { AdminLayoutComponent } from './containers/';
@@ -31,6 +33,7 @@ import { AdminComponent } from './views/admin/admin.component';
   ],
   imports: [
     BrowserModule,
+    MatToolbarModule,
     AppRoutingModule
   ],
   providers: [{
